@@ -8,6 +8,7 @@
     "nodemon": "^2.0.16"
   },
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "push" : "git push -u origin master && git push heroku master"
   }
 }
