@@ -12,6 +12,9 @@ var jsonParser = bodyParser.json()
 var urlencodedParser = bodyParser.urlencoded({ extended: false })
 
 
+app.get("",(req,res)=>{
+    res.send("Use post")
+})
 app.post("/get",jsonParser,urlencodedParser,async (req,res)=>{
     s=await axios.get(req.body.url).catch(
         function (err){
