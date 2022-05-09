@@ -9,6 +9,6 @@
   },
   "scripts": {
     "start": "nodemon index.js",
-    "push" : "git push -u origin master && git push heroku master"
+    "push" : "git add . && git commit -m 'Initial' && git push -u origin master && git push heroku master"
   }
 }
